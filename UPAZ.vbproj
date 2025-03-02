@@ -744,6 +744,12 @@
     <Compile Include="Forms\Testing\Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Zprueba\zzPrueba.Designer.vb">
+      <DependentUpon>zzPrueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Zprueba\zzPrueba.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModEnumations.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -1008,6 +1014,9 @@
     <EmbeddedResource Include="Forms\ReportForms\PriceAnalysisReport\PriceAnalysis.rdlc" />
     <EmbeddedResource Include="Forms\Testing\Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Zprueba\zzPrueba.resx">
+      <DependentUpon>zzPrueba.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resource1.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
