@@ -1,0 +1,1167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32745E45-3FAF-4937-B029-373C6DF35F8D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>UPAZ.My.MyApplication</StartupObject>
+    <RootNamespace>UPAZ</RootNamespace>
+    <AssemblyName>UPAZ</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\zeraus\OneDrive\Escritorio\UPAZ_V1\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>UPAZ.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>UPAZ.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F5CA3350C28BCD7EFE79CAC8509A79A25F1DC0CF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>UPAZ_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>zerauS3.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.6.0.0\lib\net461\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Options.6.0.0\lib\net461\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Primitives.6.0.0\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.6.1.1\lib\netstandard2.0\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=6.1.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.6.1.1\lib\netstandard2.0\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Quality, Version=6.1.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.6.1.1\lib\netstandard2.0\PdfSharp.Quality.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Snippets, Version=6.1.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.6.1.1\lib\netstandard2.0\PdfSharp.Snippets.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.System, Version=6.1.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.6.1.1\lib\netstandard2.0\PdfSharp.System.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.WPFonts, Version=6.1.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.6.1.1\lib\netstandard2.0\PdfSharp.WPFonts.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.6.0.0\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonFuntion.vb" />
+    <Compile Include="Controls\Button\ZBoutton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckBox\UPCheckBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ComboBox\ComboBoxItem.vb" />
+    <Compile Include="Controls\ComboBox\ComboBoxItemEnum.vb" />
+    <Compile Include="Controls\ComboBox\HoverEventArgs.vb" />
+    <Compile Include="Controls\ComboBox\UPComboBox.Designer.vb">
+      <DependentUpon>UPComboBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ComboBox\UPComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DataGridView\Columns\ComboBox\UPCtlCellComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DataGridView\Columns\ComboBox\UPEditorCellComboBox.vb" />
+    <Compile Include="Controls\DataGridView\Columns\ComboBox\UPDataGridViewColumnComboBox.vb" />
+    <Compile Include="Controls\DataGridView\Columns\Float\PEDataGridViewColumnFloat.vb" />
+    <Compile Include="Controls\DataGridView\Columns\UPDataGridViewColumn.vb" />
+    <Compile Include="Controls\DataGridView\UPDataGridView.Designer.vb">
+      <DependentUpon>UPDataGridView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DataGridView\UPDataGridView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DataGridView\UPDGViewList\UPDGViewList.Designer.vb">
+      <DependentUpon>UPDGViewList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DataGridView\UPDGViewList\UPDGViewList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DateTimePicker\UPDateTimePicker.Designer.vb">
+      <DependentUpon>UPDateTimePicker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DateTimePicker\UPDateTimePicker.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Label\UPLabel.Designer.vb">
+      <DependentUpon>UPLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Label\UPLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListView\UPListView.Designer.vb">
+      <DependentUpon>UPListView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ListView\UPListView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListView\UPListViewInsumos\UPListViewInsumos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Panel\UPPanel.Designer.vb">
+      <DependentUpon>UPPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Panel\UPPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBox\UPTextBox.Designer.vb">
+      <DependentUpon>UPTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextBox\UPTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBox\UPTextBoxNumerico\UPTextBoxNumerico.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="COSTUPADataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>COSTUPADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\InputAppChildForms\FormDataSourceInput.Designer.vb">
+      <DependentUpon>FormDataSourceInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\InputAppChildForms\FormDataSourceInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppMoneyType.Designer.vb">
+      <DependentUpon>FormAppMoneyType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppMoneyType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\PanelsPrice\FormEquipmentPriceList.Designer.vb">
+      <DependentUpon>FormEquipmentPriceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\PanelsPrice\FormEquipmentPriceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\PanelsPrice\FormLabourPriceList.Designer.vb">
+      <DependentUpon>FormLabourPriceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\PanelsPrice\FormLabourPriceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\PanelsPrice\FormMaterialPriceList.Designer.vb">
+      <DependentUpon>FormMaterialPriceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\PanelsPrice\FormMaterialPriceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\PanelsPrice\PanelListEquipmentPrice.Designer.vb">
+      <DependentUpon>PanelListEquipmentPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\PanelsPrice\PanelListEquipmentPrice.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\PanelsPrice\PanelListLabourPrice.Designer.vb">
+      <DependentUpon>PanelListLabourPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\PanelsPrice\PanelListLabourPrice.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\PanelsPrice\PanelListMaterialPrice.Designer.vb">
+      <DependentUpon>PanelListMaterialPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\PanelsPrice\PanelListMaterialPrice.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppMoneyChange.Designer.vb">
+      <DependentUpon>FormAppMoneyChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppMoneyChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FomEqmtPriceEst.Designer.vb">
+      <DependentUpon>FomEqmtPriceEst.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FomEqmtPriceEst.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FormEqmtPriceEst1.Designer.vb">
+      <DependentUpon>FormEqmtPriceEst1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FormEqmtPriceEst1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FormEqmtPriceEst2.Designer.vb">
+      <DependentUpon>FormEqmtPriceEst2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FormEqmtPriceEst2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FormEqmtPriceEst3.Designer.vb">
+      <DependentUpon>FormEqmtPriceEst3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FormEqmtPriceEst3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FormEqmtPriceEst4.Designer.vb">
+      <DependentUpon>FormEqmtPriceEst4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FormEqmtPriceEst4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormCompoundEquipment.Designer.vb">
+      <DependentUpon>FormCompoundEquipment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormCompoundEquipment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormCompoundLabour.Designer.vb">
+      <DependentUpon>FormCompoundLabour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormCompoundLabour.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormCompoundMaterial.Designer.vb">
+      <DependentUpon>FormCompoundMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormCompoundMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormEquipmentPriceModal.Designer.vb">
+      <DependentUpon>FormEquipmentPriceModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormEquipmentPriceModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormLabourPriceModal.Designer.vb">
+      <DependentUpon>FormLabourPriceModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormLabourPriceModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormMaterialPriceModal.Designer.vb">
+      <DependentUpon>FormMaterialPriceModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormMaterialPriceModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\FormSelectReport\FormSelectReport.Designer.vb">
+      <DependentUpon>FormSelectReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\FormSelectReport\FormSelectReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportForms\EquipmentCostPoss\DataSets\DataSetEqmtCost.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEqmtCost.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\EquipmentCostPoss\DataSets\DataSetEqmtCost.vb">
+      <DependentUpon>DataSetEqmtCost.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\EquipmentCostPoss\FormReportEqmtCostOpyPoss.Designer.vb">
+      <DependentUpon>FormReportEqmtCostOpyPoss.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\EquipmentCostPoss\FormReportEqmtCostOpyPoss.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportForms\MaterialPriceReport\DataSets\DataSetReportMatPrice.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReportMatPrice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\MaterialPriceReport\DataSets\DataSetReportMatPrice.vb">
+      <DependentUpon>DataSetReportMatPrice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\PriceAnalysisReportArg\DataSet\DataSetReportArg.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReportArg.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\PriceAnalysisReportArg\DataSet\DataSetReportArg.vb">
+      <DependentUpon>DataSetReportArg.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\PriceAnalysisReportArg\FormReportPriceAnalisysArg.Designer.vb">
+      <DependentUpon>FormReportPriceAnalisysArg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\PriceAnalysisReportArg\FormReportPriceAnalisysArg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportForms\TotalReport\FormReportPartida.Designer.vb">
+      <DependentUpon>FormReportPartida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\TotalReport\FormReportPartida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppCostCalType.Designer.vb">
+      <DependentUpon>FormAppCostCalType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppCostCalType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppCostValue.Designer.vb">
+      <DependentUpon>FormAppCostValue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppCostValue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\ProyAppChildForms\FormModalProject.Designer.vb">
+      <DependentUpon>FormModalProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\ProyAppChildForms\FormModalProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\ProyAppChildForms\FormProjectSelect.Designer.vb">
+      <DependentUpon>FormProjectSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\ProyAppChildForms\FormProjectSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\ProyAppChildForms\FormProjectCost.Designer.vb">
+      <DependentUpon>FormProjectCost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\ProyAppChildForms\FormProjectCost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormEquipmentCostPyOUser.Designer.vb">
+      <DependentUpon>FormEquipmentCostPyOUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormEquipmentCostPyOUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormEquipment.Designer.vb">
+      <DependentUpon>FormEquipment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormEquipment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormFormulacionPartida.Designer.vb">
+      <DependentUpon>FormFormulacionPartida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormFormulacionPartida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppCrearUser.Designer.vb">
+      <DependentUpon>FormAppCrearUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppCrearUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormLabour.Designer.vb">
+      <DependentUpon>FormLabour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormLabour.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormLabourPrice.Designer.vb">
+      <DependentUpon>FormLabourPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormLabourPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormMaterial.Designer.vb">
+      <DependentUpon>FormMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormMaterialPrice.Designer.vb">
+      <DependentUpon>FormMaterialPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormMaterialPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormFormulacionObra.Designer.vb">
+      <DependentUpon>FormFormulacionObra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormFormulacionObra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\PartidaAppChildForms\FormChapterModal.Designer.vb">
+      <DependentUpon>FormChapterModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\PartidaAppChildForms\FormChapterModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\ObraAppChildForms\FormObraCost.Designer.vb">
+      <DependentUpon>FormObraCost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\ObraAppChildForms\FormObraCost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppPartidaMatrixType.Designer.vb">
+      <DependentUpon>FormAppPartidaMatrixType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppPartidaMatrixType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\PartidaAppChildForms\FormPartidaCost.Designer.vb">
+      <DependentUpon>FormPartidaCost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\PartidaAppChildForms\FormPartidaCost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\APUModChildForms\FormAPU.Designer.vb">
+      <DependentUpon>FormAPU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\APUModChildForms\FormAPU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\APUModChildForms\PanelListEquipment.Designer.vb">
+      <DependentUpon>PanelListEquipment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\APUModChildForms\PanelListEquipment.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\APUModChildForms\PanelListLabour.Designer.vb">
+      <DependentUpon>PanelListLabour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\APUModChildForms\PanelListLabour.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\APUModChildForms\PanelListMaterial.Designer.vb">
+      <DependentUpon>PanelListMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\APUModChildForms\PanelListMaterial.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\BudgetModChildForms\FormBudget.Designer.vb">
+      <DependentUpon>FormBudget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\BudgetModChildForms\FormBudget.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\BudgetModChildForms\PanelListPartida.Designer.vb">
+      <DependentUpon>PanelListPartida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\BudgetModChildForms\PanelListPartida.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\InputAppChildForms\FormMaterialType.Designer.vb">
+      <DependentUpon>FormMaterialType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\InputAppChildForms\FormMaterialType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormEquipmentModal.Designer.vb">
+      <DependentUpon>FormEquipmentModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormEquipmentModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormLabourModal.Designer.vb">
+      <DependentUpon>FormLabourModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormLabourModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormMateriaModal.Designer.vb">
+      <DependentUpon>FormMateriaModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormMateriaModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\LoggingForms\FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\LoggingForms\FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProgressBarDialog\ProgressBarDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportForms\EquipmentPriceReport\FormReportEquipmentPrice.Designer.vb">
+      <DependentUpon>FormReportEquipmentPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\EquipmentPriceReport\FormReportEquipmentPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportForms\LabourPriceReport\FormReportLabourPrice.Designer.vb">
+      <DependentUpon>FormReportLabourPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\LabourPriceReport\FormReportLabourPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportForms\MaterialObraReport\DataSets\ReportListObra.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportListObra.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\MaterialObraReport\DataSets\ReportListObra.vb">
+      <DependentUpon>ReportListObra.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\MaterialObraReport\FormMaterialList2.Designer.vb">
+      <DependentUpon>FormMaterialList2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\MaterialObraReport\FormMaterialList2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportForms\MaterialPriceReport\FormReportMaterialPrice.Designer.vb">
+      <DependentUpon>FormReportMaterialPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\MaterialPriceReport\FormReportMaterialPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportForms\ObraReport\DataSets\DataSetReportPresupuesto.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReportPresupuesto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\ObraReport\DataSets\DataSetReportPresupuesto.vb">
+      <DependentUpon>DataSetReportPresupuesto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\ObraReport\FormReportPresupuesto.Designer.vb">
+      <DependentUpon>FormReportPresupuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\ObraReport\FormReportPresupuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Testing\Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Testing\Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Testing\Form9.Designer.vb">
+      <DependentUpon>Form9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Testing\Form9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Testing\Formprueba.Designer.vb">
+      <DependentUpon>Formprueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Testing\Formprueba.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\ObraAppChildForms\FormStageModal.Designer.vb">
+      <DependentUpon>FormStageModal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\ObraAppChildForms\FormStageModal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormTool.Designer.vb">
+      <DependentUpon>FormTool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormTool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormToolPrice.Designer.vb">
+      <DependentUpon>FormToolPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormToolPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormTransport.Designer.vb">
+      <DependentUpon>FormTransport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormTransport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormTransportPrice.Designer.vb">
+      <DependentUpon>FormTransportPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChildForms\FormTransportPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppUnit.Designer.vb">
+      <DependentUpon>FormAppUnit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppUnit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportForms\PriceAnalysisReport\DataSets\DataSetReportPartida.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReportPartida.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\PriceAnalysisReport\DataSets\DataSetReportPartida.vb">
+      <DependentUpon>DataSetReportPartida.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\PriceAnalysisReport\FormReportPriceAnalysis.Designer.vb">
+      <DependentUpon>FormReportPriceAnalysis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForms\PriceAnalysisReport\FormReportPriceAnalysis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Testing\Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Testing\Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModEnumations.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resource1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ServerServices.vb" />
+    <Compile Include="Settings.vb" />
+    <Compile Include="Testing\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Testing\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\InputAppChildForms\FormDataSourceInput.resx">
+      <DependentUpon>FormDataSourceInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppMoneyType.resx">
+      <DependentUpon>FormAppMoneyType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\PanelsPrice\FormEquipmentPriceList.resx">
+      <DependentUpon>FormEquipmentPriceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\PanelsPrice\FormLabourPriceList.resx">
+      <DependentUpon>FormLabourPriceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\PanelsPrice\FormMaterialPriceList.resx">
+      <DependentUpon>FormMaterialPriceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\PanelsPrice\PanelListEquipmentPrice.resx">
+      <DependentUpon>PanelListEquipmentPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\PanelsPrice\PanelListLabourPrice.resx">
+      <DependentUpon>PanelListLabourPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\PanelsPrice\PanelListMaterialPrice.resx">
+      <DependentUpon>PanelListMaterialPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppMoneyChange.resx">
+      <DependentUpon>FormAppMoneyChange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FomEqmtPriceEst.resx">
+      <DependentUpon>FomEqmtPriceEst.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FormEqmtPriceEst1.resx">
+      <DependentUpon>FormEqmtPriceEst1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FormEqmtPriceEst2.resx">
+      <DependentUpon>FormEqmtPriceEst2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FormEqmtPriceEst3.resx">
+      <DependentUpon>FormEqmtPriceEst3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\FomEqmtPriceEst\FormEqmtPriceEst4.resx">
+      <DependentUpon>FormEqmtPriceEst4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormCompoundEquipment.resx">
+      <DependentUpon>FormCompoundEquipment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormCompoundLabour.resx">
+      <DependentUpon>FormCompoundLabour.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormCompoundMaterial.resx">
+      <DependentUpon>FormCompoundMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormEquipmentPriceModal.resx">
+      <DependentUpon>FormEquipmentPriceModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormLabourPriceModal.resx">
+      <DependentUpon>FormLabourPriceModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormMaterialPriceModal.resx">
+      <DependentUpon>FormMaterialPriceModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\FormSelectReport\FormSelectReport.resx">
+      <DependentUpon>FormSelectReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportForms\EquipmentCostPoss\FormReportEqmtCostOpyPoss.resx">
+      <DependentUpon>FormReportEqmtCostOpyPoss.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportForms\EquipmentCostPoss\ReportEqmtPossOp1.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\EquipmentCostPoss\ReportEqmtPossOp3.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\EquipmentPriceReport\FormReportEquipmentPrice.resx">
+      <DependentUpon>FormReportEquipmentPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportForms\LabourPriceReport\FormReportLabourPrice.resx">
+      <DependentUpon>FormReportLabourPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportForms\MaterialPriceReport\FormReportMaterialPrice.resx">
+      <DependentUpon>FormReportMaterialPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportForms\ObraReport\ReportPptoS2.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\PriceAnalysisReportArg\FormReportPriceAnalisysArg.resx">
+      <DependentUpon>FormReportPriceAnalisysArg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportForms\PriceAnalysisReportArg\PriceAnalysisArg.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\PriceAnalysisReport\PriceAnalysis2.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\TotalReport\FormReportPartida.resx">
+      <DependentUpon>FormReportPartida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppCostCalType.resx">
+      <DependentUpon>FormAppCostCalType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppCostValue.resx">
+      <DependentUpon>FormAppCostValue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\ProyAppChildForms\FormModalProject.resx">
+      <DependentUpon>FormModalProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\ProyAppChildForms\FormProjectSelect.resx">
+      <DependentUpon>FormProjectSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\ProyAppChildForms\FormProjectCost.resx">
+      <DependentUpon>FormProjectCost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChildForms\FormEquipmentCostPyOUser.resx">
+      <DependentUpon>FormEquipmentCostPyOUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChildForms\FormEquipment.resx">
+      <DependentUpon>FormEquipment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChildForms\FormFormulacionPartida.resx">
+      <DependentUpon>FormFormulacionPartida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppCrearUser.resx">
+      <DependentUpon>FormAppCrearUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChildForms\FormLabour.resx">
+      <DependentUpon>FormLabour.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChildForms\FormLabourPrice.resx">
+      <DependentUpon>FormLabourPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChildForms\FormMaterial.resx">
+      <DependentUpon>FormMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChildForms\FormMaterialPrice.resx">
+      <DependentUpon>FormMaterialPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChildForms\FormFormulacionObra.resx">
+      <DependentUpon>FormFormulacionObra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\PartidaAppChildForms\FormChapterModal.resx">
+      <DependentUpon>FormChapterModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\ObraAppChildForms\FormObraCost.resx">
+      <DependentUpon>FormObraCost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppPartidaMatrixType.resx">
+      <DependentUpon>FormAppPartidaMatrixType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\PartidaAppChildForms\FormPartidaCost.resx">
+      <DependentUpon>FormPartidaCost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\APUModChildForms\FormAPU.resx">
+      <DependentUpon>FormAPU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\APUModChildForms\PanelListEquipment.resx">
+      <DependentUpon>PanelListEquipment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\APUModChildForms\PanelListLabour.resx">
+      <DependentUpon>PanelListLabour.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\APUModChildForms\PanelListMaterial.resx">
+      <DependentUpon>PanelListMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\BudgetModChildForms\FormBudget.resx">
+      <DependentUpon>FormBudget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\BudgetModChildForms\PanelListPartida.resx">
+      <DependentUpon>PanelListPartida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\InputAppChildForms\FormMaterialType.resx">
+      <DependentUpon>FormMaterialType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormEquipmentModal.resx">
+      <DependentUpon>FormEquipmentModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormLabourModal.resx">
+      <DependentUpon>FormLabourModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\ModChildForms\InputModChildForms\FormMateriaModal.resx">
+      <DependentUpon>FormMateriaModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\LoggingForms\FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProgressBarDialog\ProgressBarDialog.resx">
+      <DependentUpon>ProgressBarDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportForms\EquipmentPriceReport\ReportEquipmentPrice.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\LabourPriceReport\ReportLabourPrice.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\MaterialObraReport\FormMaterialList2.resx">
+      <DependentUpon>FormMaterialList2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportForms\MaterialObraReport\ListadoMaterialesDeObra.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\MaterialPriceReport\ReportMaterialPrice.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\ObraReport\FormReportPresupuesto.resx">
+      <DependentUpon>FormReportPresupuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportForms\ObraReport\ReportPpto9.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\ObraReport\ReportPpto8.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\ObraReport\ReportPpto7.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\ObraReport\ReportPpto6.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\ObraReport\ReportPpto5.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\ObraReport\ReportPpto4.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\ObraReport\ReportPpto3.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\ObraReport\ReportPpto2.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\ObraReport\ReportPpto1.rdlc" />
+    <EmbeddedResource Include="Forms\ReportForms\ObraReport\ReportPpto.rdlc" />
+    <EmbeddedResource Include="Forms\Testing\Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Testing\Form9.resx">
+      <DependentUpon>Form9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Testing\Formprueba.resx">
+      <DependentUpon>Formprueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\ObraAppChildForms\FormStageModal.resx">
+      <DependentUpon>FormStageModal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChildForms\FormTool.resx">
+      <DependentUpon>FormTool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChildForms\FormToolPrice.resx">
+      <DependentUpon>FormToolPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChildForms\FormTransport.resx">
+      <DependentUpon>FormTransport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChildForms\FormTransportPrice.resx">
+      <DependentUpon>FormTransportPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\AppChildForms\SetAppChildForms\FormAppUnit.resx">
+      <DependentUpon>FormAppUnit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportForms\PriceAnalysisReport\FormReportPriceAnalysis.resx">
+      <DependentUpon>FormReportPriceAnalysis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportForms\PriceAnalysisReport\PriceAnalysis.rdlc" />
+    <EmbeddedResource Include="Forms\Testing\Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resource1.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="COSTUPADataSet.xsc">
+      <DependentUpon>COSTUPADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="COSTUPADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>COSTUPADataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="COSTUPADataSet.xss">
+      <DependentUpon>COSTUPADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Fonts\Tw-Cen-MT-Condensed-Font.ttf" />
+    <None Include="Fonts\TwCenMTRegular.ttf" />
+    <None Include="Forms\ReportForms\EquipmentCostPoss\DataSets\DataSetEqmtCost.xsc">
+      <DependentUpon>DataSetEqmtCost.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\ReportForms\EquipmentCostPoss\DataSets\DataSetEqmtCost.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEqmtCost.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Forms\ReportForms\EquipmentCostPoss\DataSets\DataSetEqmtCost.xss">
+      <DependentUpon>DataSetEqmtCost.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\ReportForms\MaterialObraReport\DataSets\ReportListObra.xsc">
+      <DependentUpon>ReportListObra.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\ReportForms\MaterialObraReport\DataSets\ReportListObra.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportListObra.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Forms\ReportForms\MaterialObraReport\DataSets\ReportListObra.xss">
+      <DependentUpon>ReportListObra.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\ReportForms\MaterialPriceReport\DataSets\DataSetReportMatPrice.xsc">
+      <DependentUpon>DataSetReportMatPrice.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\ReportForms\MaterialPriceReport\DataSets\DataSetReportMatPrice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReportMatPrice.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Forms\ReportForms\MaterialPriceReport\DataSets\DataSetReportMatPrice.xss">
+      <DependentUpon>DataSetReportMatPrice.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\ReportForms\ObraReport\DataSets\DataSetReportPresupuesto.xsc">
+      <DependentUpon>DataSetReportPresupuesto.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\ReportForms\ObraReport\DataSets\DataSetReportPresupuesto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReportPresupuesto.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Forms\ReportForms\ObraReport\DataSets\DataSetReportPresupuesto.xss">
+      <DependentUpon>DataSetReportPresupuesto.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\ReportForms\PriceAnalysisReportArg\DataSet\DataSetReportArg.xsc">
+      <DependentUpon>DataSetReportArg.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\ReportForms\PriceAnalysisReportArg\DataSet\DataSetReportArg.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReportArg.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Forms\ReportForms\PriceAnalysisReportArg\DataSet\DataSetReportArg.xss">
+      <DependentUpon>DataSetReportArg.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\ReportForms\PriceAnalysisReport\DataSets\DataSetReportPartida.xsc">
+      <DependentUpon>DataSetReportPartida.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\ReportForms\PriceAnalysisReport\DataSets\DataSetReportPartida.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReportPartida.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Forms\ReportForms\PriceAnalysisReport\DataSets\DataSetReportPartida.xss">
+      <DependentUpon>DataSetReportPartida.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="UPAZ_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Defecto2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Defecto.ico" />
+    <Content Include="zerauS3.ico" />
+    <None Include="Resources\zupaS.png" />
+    <None Include="Resources\zerauS6.png" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,917 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+UPAZ
+</name>
+</assembly>
+<members>
+<member name="T:UPAZ.My.Resources.Resource1">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:UPAZ.My.Resources.Resource1.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:UPAZ.My.Resources.Resource1.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:UPAZ.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:UPAZ.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:UPAZ.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:UPAZ.My.Resources.Resources.Defecto">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:UPAZ.My.Resources.Resources.zerauS6">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:UPAZ.My.Resources.Resources.zupaS">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:UPAZ.COSTUPADataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:UPAZ.COSTUPADataSet.partidaMaterialDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.COSTUPADataSet.partidaMaterialRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.COSTUPADataSet.partidaMaterialRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.COSTUPADataSetTableAdapters.partidaMaterialTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:UPAZ.COSTUPADataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:UPAZ.COSTUPADataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(UPAZ.COSTUPADataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:UPAZ.COSTUPADataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(UPAZ.COSTUPADataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:UPAZ.COSTUPADataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(UPAZ.COSTUPADataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:UPAZ.COSTUPADataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:UPAZ.COSTUPADataSetTableAdapters.TableAdapterManager.UpdateAll(UPAZ.COSTUPADataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:UPAZ.COSTUPADataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:UPAZ.COSTUPADataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:UPAZ.DataSetEqmtCost">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetEqmtCost.ReportPrecEstDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetEqmtCost.ReportPrecEstRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetEqmtCost.ReportPrecEstRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:UPAZ.DataSet1.ReportMaterialPriceDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSet1.ReportMaterialPriceRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSet1.ReportMaterialPriceRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.ReportPartidaMaterialDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.ReportPartidaLabourDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaTotalMaterialesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaTotalLabourDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.ReportDataPartidaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaCostsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.TMSymbolMoneyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PUMSymbolMoneyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.TESymbolMoneyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PUESymbolMoneyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaEquipmentArgDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaEquipmentTotalArgDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaCostsEquitmentTotalArgDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaCostsEquitmentTbArgDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.ReportPartidaMaterialRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.ReportPartidaLabourRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaTotalMaterialesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaTotalLabourRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.ReportDataPartidaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaCostsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.TMSymbolMoneyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PUMSymbolMoneyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.TESymbolMoneyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PUESymbolMoneyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaEquipmentArgRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaEquipmentTotalArgRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaCostsEquitmentTotalArgRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaCostsEquitmentTbArgRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.ReportPartidaMaterialRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.ReportPartidaLabourRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaTotalMaterialesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaTotalLabourRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.ReportDataPartidaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaCostsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.TMSymbolMoneyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PUMSymbolMoneyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.TESymbolMoneyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PUESymbolMoneyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaEquipmentArgRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaEquipmentTotalArgRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaCostsEquitmentTotalArgRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportArg.PartidaCostsEquitmentTbArgRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.ReportListObra">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:UPAZ.ReportListObra.DataTableObraDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.ReportListObra.MaterialesDeObraDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.ReportListObra.TableTotalMaterialListDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.ReportListObra.SymbolMoneyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.ReportListObra.DataTableObraRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.ReportListObra.MaterialesDeObraRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.ReportListObra.TableTotalMaterialListRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.ReportListObra.SymbolMoneyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.ReportListObra.DataTableObraRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.ReportListObra.MaterialesDeObraRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.ReportListObra.TableTotalMaterialListRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.ReportListObra.SymbolMoneyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuestoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto2DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto3DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto4DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto5DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto6DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto7DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto8DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto9DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto10DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.DataTableObraDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.TotalPresupuestoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.TotalPresupuesto1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.TotalPresupuesto2DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.SymbolMoneyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuestoS1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuestoS2DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuestoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto2Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto3Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto4Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto5Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto6Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto7Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto8Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto9Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto10Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.DataTableObraRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.TotalPresupuestoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.TotalPresupuesto1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.TotalPresupuesto2Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.SymbolMoneyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuestoS1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuestoS2Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuestoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto2RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto3RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto4RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto5RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto6RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto7RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto8RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto9RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuesto10RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.DataTableObraRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.TotalPresupuestoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.TotalPresupuesto1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.TotalPresupuesto2RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.SymbolMoneyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuestoS1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPresupuesto.ReportPresupuestoS2RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportPartidaMaterialDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportPartidaEquitpmentDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportPartidaLabourDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PartidaTotalMaterialesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PartidaTotalEquipmentDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PartidaTotalLabourDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportDataPartidaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PartidaCostsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.TMSymbolMoneyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PUMSymbolMoneyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.TESymbolMoneyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PUESymbolMoneyDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportPartidaEquipment2DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportPartidaMaterialRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportPartidaEquitpmentRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportPartidaLabourRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PartidaTotalMaterialesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PartidaTotalEquipmentRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PartidaTotalLabourRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportDataPartidaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PartidaCostsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.TMSymbolMoneyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PUMSymbolMoneyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.TESymbolMoneyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PUESymbolMoneyRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportPartidaEquipment2Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportPartidaMaterialRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportPartidaEquitpmentRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportPartidaLabourRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PartidaTotalMaterialesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PartidaTotalEquipmentRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PartidaTotalLabourRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportDataPartidaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PartidaCostsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.TMSymbolMoneyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PUMSymbolMoneyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.TESymbolMoneyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.PUESymbolMoneyRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:UPAZ.DataSetReportPartida.ReportPartidaEquipment2RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+</members>
+</doc>

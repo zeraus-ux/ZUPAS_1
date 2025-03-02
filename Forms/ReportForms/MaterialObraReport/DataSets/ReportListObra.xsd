@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportListObra" targetNamespace="http://tempuri.org/ReportListObra.xsd" xmlns:mstns="http://tempuri.org/ReportListObra.xsd" xmlns="http://tempuri.org/ReportListObra.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportListObra" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ReportListObra" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReportListObra">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableObra" msprop:Generator_RowEvHandlerName="DataTableObraRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableObraRowDeleted" msprop:Generator_RowDeletingName="DataTableObraRowDeleting" msprop:Generator_RowEvArgName="DataTableObraRowChangeEvent" msprop:Generator_TablePropName="DataTableObra" msprop:Generator_RowChangedName="DataTableObraRowChanged" msprop:Generator_UserTableName="DataTableObra" msprop:Generator_RowChangingName="DataTableObraRowChanging" msprop:Generator_RowClassName="DataTableObraRow" msprop:Generator_TableClassName="DataTableObraDataTable" msprop:Generator_TableVarName="tableDataTableObra">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnVarNameInTable="columnid" type="xs:int" minOccurs="0" />
+              <xs:element name="refObra" msprop:Generator_ColumnPropNameInTable="refObraColumn" msprop:Generator_ColumnPropNameInRow="refObra" msprop:Generator_UserColumnName="refObra" msprop:Generator_ColumnVarNameInTable="columnrefObra" type="xs:string" minOccurs="0" />
+              <xs:element name="nameObra" msprop:Generator_ColumnPropNameInTable="nameObraColumn" msprop:Generator_ColumnPropNameInRow="nameObra" msprop:Generator_UserColumnName="nameObra" msprop:Generator_ColumnVarNameInTable="columnnameObra" type="xs:string" minOccurs="0" />
+              <xs:element name="descriptionObra" msprop:Generator_ColumnPropNameInTable="descriptionObraColumn" msprop:Generator_ColumnPropNameInRow="descriptionObra" msprop:Generator_UserColumnName="descriptionObra" msprop:Generator_ColumnVarNameInTable="columndescriptionObra" type="xs:string" minOccurs="0" />
+              <xs:element name="created" msprop:Generator_ColumnPropNameInTable="createdColumn" msprop:Generator_ColumnPropNameInRow="created" msprop:Generator_UserColumnName="created" msprop:Generator_ColumnVarNameInTable="columncreated" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="updated" msprop:Generator_ColumnPropNameInTable="updatedColumn" msprop:Generator_ColumnPropNameInRow="updated" msprop:Generator_UserColumnName="updated" msprop:Generator_ColumnVarNameInTable="columnupdated" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="project_id" msprop:Generator_ColumnPropNameInTable="project_idColumn" msprop:Generator_ColumnPropNameInRow="project_id" msprop:Generator_UserColumnName="project_id" msprop:Generator_ColumnVarNameInTable="columnproject_id" type="xs:int" minOccurs="0" />
+              <xs:element name="budgetPrice" msprop:Generator_ColumnPropNameInTable="budgetPriceColumn" msprop:Generator_ColumnPropNameInRow="budgetPrice" msprop:Generator_UserColumnName="budgetPrice" msprop:Generator_ColumnVarNameInTable="columnbudgetPrice" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MaterialesDeObra" msprop:Generator_RowEvHandlerName="MaterialesDeObraRowChangeEventHandler" msprop:Generator_RowDeletedName="MaterialesDeObraRowDeleted" msprop:Generator_RowDeletingName="MaterialesDeObraRowDeleting" msprop:Generator_RowEvArgName="MaterialesDeObraRowChangeEvent" msprop:Generator_TablePropName="MaterialesDeObra" msprop:Generator_RowChangedName="MaterialesDeObraRowChanged" msprop:Generator_UserTableName="MaterialesDeObra" msprop:Generator_RowChangingName="MaterialesDeObraRowChanging" msprop:Generator_RowClassName="MaterialesDeObraRow" msprop:Generator_TableClassName="MaterialesDeObraDataTable" msprop:Generator_TableVarName="tableMaterialesDeObra">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="material_id" msprop:Generator_ColumnPropNameInTable="material_idColumn" msprop:Generator_ColumnPropNameInRow="material_id" msprop:Generator_UserColumnName="material_id" msprop:Generator_ColumnVarNameInTable="columnmaterial_id" type="xs:int" minOccurs="0" />
+              <xs:element name="unit_id" msprop:Generator_ColumnPropNameInTable="unit_idColumn" msprop:Generator_ColumnPropNameInRow="unit_id" msprop:Generator_UserColumnName="unit_id" msprop:Generator_ColumnVarNameInTable="columnunit_id" type="xs:int" minOccurs="0" />
+              <xs:element name="nameMaterial" msprop:Generator_ColumnPropNameInTable="nameMaterialColumn" msprop:Generator_ColumnPropNameInRow="nameMaterial" msprop:Generator_UserColumnName="nameMaterial" msprop:Generator_ColumnVarNameInTable="columnnameMaterial" type="xs:string" minOccurs="0" />
+              <xs:element name="symbolUnit" msprop:Generator_ColumnPropNameInTable="symbolUnitColumn" msprop:Generator_ColumnPropNameInRow="symbolUnit" msprop:Generator_UserColumnName="symbolUnit" msprop:Generator_ColumnVarNameInTable="columnsymbolUnit" type="xs:string" minOccurs="0" />
+              <xs:element name="quantityMaterial" msprop:Generator_ColumnPropNameInTable="quantityMaterialColumn" msprop:Generator_ColumnPropNameInRow="quantityMaterial" msprop:Generator_UserColumnName="quantityMaterial" msprop:Generator_ColumnVarNameInTable="columnquantityMaterial" type="xs:double" minOccurs="0" />
+              <xs:element name="refMaterial" msprop:Generator_ColumnPropNameInTable="refMaterialColumn" msprop:Generator_ColumnPropNameInRow="refMaterial" msprop:Generator_UserColumnName="refMaterial" msprop:Generator_ColumnVarNameInTable="columnrefMaterial" type="xs:string" minOccurs="0" />
+              <xs:element name="Item" msprop:Generator_ColumnPropNameInTable="ItemColumn" msprop:Generator_ColumnPropNameInRow="Item" msprop:Generator_UserColumnName="Item" msprop:Generator_ColumnVarNameInTable="columnItem" type="xs:int" minOccurs="0" />
+              <xs:element name="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_UserColumnName="price" msprop:Generator_ColumnVarNameInTable="columnprice" type="xs:double" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" type="xs:double" minOccurs="0" />
+              <xs:element name="SymbolMoneyName" msprop:Generator_ColumnPropNameInRow="SymbolMoneyName" msprop:Generator_ColumnPropNameInTable="SymbolMoneyNameColumn" msprop:Generator_ColumnVarNameInTable="columnSymbolMoneyName" msprop:Generator_UserColumnName="SymbolMoneyName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TableTotalMaterialList" msprop:Generator_RowEvHandlerName="TableTotalMaterialListRowChangeEventHandler" msprop:Generator_RowDeletedName="TableTotalMaterialListRowDeleted" msprop:Generator_RowDeletingName="TableTotalMaterialListRowDeleting" msprop:Generator_RowEvArgName="TableTotalMaterialListRowChangeEvent" msprop:Generator_TablePropName="TableTotalMaterialList" msprop:Generator_RowChangedName="TableTotalMaterialListRowChanged" msprop:Generator_UserTableName="TableTotalMaterialList" msprop:Generator_RowChangingName="TableTotalMaterialListRowChanging" msprop:Generator_RowClassName="TableTotalMaterialListRow" msprop:Generator_TableClassName="TableTotalMaterialListDataTable" msprop:Generator_TableVarName="tableTableTotalMaterialList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SymbolMoney" msprop:Generator_RowEvHandlerName="SymbolMoneyRowChangeEventHandler" msprop:Generator_RowDeletedName="SymbolMoneyRowDeleted" msprop:Generator_RowDeletingName="SymbolMoneyRowDeleting" msprop:Generator_RowEvArgName="SymbolMoneyRowChangeEvent" msprop:Generator_TablePropName="SymbolMoney" msprop:Generator_RowChangedName="SymbolMoneyRowChanged" msprop:Generator_UserTableName="SymbolMoney" msprop:Generator_RowChangingName="SymbolMoneyRowChanging" msprop:Generator_RowClassName="SymbolMoneyRow" msprop:Generator_TableClassName="SymbolMoneyDataTable" msprop:Generator_TableVarName="tableSymbolMoney">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SymbolMoneyName" msprop:Generator_ColumnPropNameInTable="SymbolMoneyNameColumn" msprop:Generator_ColumnPropNameInRow="SymbolMoneyName" msprop:Generator_UserColumnName="SymbolMoneyName" msprop:Generator_ColumnVarNameInTable="columnSymbolMoneyName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

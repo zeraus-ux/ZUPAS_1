@@ -1,0 +1,26 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="LastUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Adm</Value>
+    </Setting>
+    <Setting Name="URLBase" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://192.168.0.42:80</Value>
+    </Setting>
+    <Setting Name="UPFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Arial, 24pt</Value>
+    </Setting>
+    <Setting Name="COSTUPAConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=DESKTOP-A3CEBNV\SQLEXPRESS;Initial Catalog=COSTUPA;Persist Security Info=True;User ID=sa;Password=12345;Encrypt=True;TrustServerCertificate=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DESKTOP-A3CEBNV\SQLEXPRESS;Initial Catalog=COSTUPA;Persist Security Info=True;User ID=sa;Password=12345;Encrypt=True;TrustServerCertificate=True</Value>
+    </Setting>
+    <Setting Name="ProjectSelectedId" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

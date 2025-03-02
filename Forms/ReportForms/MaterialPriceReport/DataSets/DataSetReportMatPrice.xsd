@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReportMaterialPrice" msprop:Generator_RowEvHandlerName="ReportMaterialPriceRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportMaterialPriceRowDeleted" msprop:Generator_RowDeletingName="ReportMaterialPriceRowDeleting" msprop:Generator_RowEvArgName="ReportMaterialPriceRowChangeEvent" msprop:Generator_TablePropName="ReportMaterialPrice" msprop:Generator_RowChangedName="ReportMaterialPriceRowChanged" msprop:Generator_UserTableName="ReportMaterialPrice" msprop:Generator_RowChangingName="ReportMaterialPriceRowChanging" msprop:Generator_RowClassName="ReportMaterialPriceRow" msprop:Generator_TableClassName="ReportMaterialPriceDataTable" msprop:Generator_TableVarName="tableReportMaterialPrice">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="refMaterial" msprop:Generator_ColumnPropNameInTable="refMaterialColumn" msprop:Generator_ColumnPropNameInRow="refMaterial" msprop:Generator_UserColumnName="refMaterial" msprop:Generator_ColumnVarNameInTable="columnrefMaterial" type="xs:string" minOccurs="0" />
+              <xs:element name="nameDataSourceInput" msprop:Generator_ColumnPropNameInTable="nameDataSourceInputColumn" msprop:Generator_ColumnPropNameInRow="nameDataSourceInput" msprop:Generator_UserColumnName="nameDataSourceInput" msprop:Generator_ColumnVarNameInTable="columnnameDataSourceInput" type="xs:string" minOccurs="0" />
+              <xs:element name="nameMaterialType" msprop:Generator_ColumnPropNameInTable="nameMaterialTypeColumn" msprop:Generator_ColumnPropNameInRow="nameMaterialType" msprop:Generator_UserColumnName="nameMaterialType" msprop:Generator_ColumnVarNameInTable="columnnameMaterialType" type="xs:float" minOccurs="0" />
+              <xs:element name="nameMaterial" msprop:Generator_ColumnPropNameInTable="nameMaterialColumn" msprop:Generator_ColumnPropNameInRow="nameMaterial" msprop:Generator_UserColumnName="nameMaterial" msprop:Generator_ColumnVarNameInTable="columnnameMaterial" type="xs:string" minOccurs="0" />
+              <xs:element name="symbolUnit" msprop:Generator_ColumnPropNameInTable="symbolUnitColumn" msprop:Generator_ColumnPropNameInRow="symbolUnit" msprop:Generator_UserColumnName="symbolUnit" msprop:Generator_ColumnVarNameInTable="columnsymbolUnit" type="xs:string" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="isAtomic" msprop:Generator_ColumnPropNameInRow="isAtomic" msprop:Generator_ColumnPropNameInTable="isAtomicColumn" msprop:Generator_ColumnVarNameInTable="columnisAtomic" msprop:Generator_UserColumnName="isAtomic" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

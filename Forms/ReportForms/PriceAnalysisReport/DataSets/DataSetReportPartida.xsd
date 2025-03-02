@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetReportPartida" targetNamespace="http://tempuri.org/DataSetReportPartida.xsd" xmlns:mstns="http://tempuri.org/DataSetReportPartida.xsd" xmlns="http://tempuri.org/DataSetReportPartida.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetReportPartida" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSetReportPartida" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetReportPartida">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReportPartidaMaterial" msprop:Generator_RowEvHandlerName="ReportPartidaMaterialRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportPartidaMaterialRowDeleted" msprop:Generator_RowDeletingName="ReportPartidaMaterialRowDeleting" msprop:Generator_RowEvArgName="ReportPartidaMaterialRowChangeEvent" msprop:Generator_TablePropName="ReportPartidaMaterial" msprop:Generator_RowChangedName="ReportPartidaMaterialRowChanged" msprop:Generator_UserTableName="ReportPartidaMaterial" msprop:Generator_RowChangingName="ReportPartidaMaterialRowChanging" msprop:Generator_RowClassName="ReportPartidaMaterialRow" msprop:Generator_TableClassName="ReportPartidaMaterialDataTable" msprop:Generator_TableVarName="tableReportPartidaMaterial">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="refMaterial" msprop:Generator_ColumnPropNameInTable="refMaterialColumn" msprop:Generator_ColumnPropNameInRow="refMaterial" msprop:Generator_UserColumnName="refMaterial" msprop:Generator_ColumnVarNameInTable="columnrefMaterial" type="xs:string" minOccurs="0" />
+              <xs:element name="nameMaterial" msprop:Generator_ColumnPropNameInTable="nameMaterialColumn" msprop:Generator_ColumnPropNameInRow="nameMaterial" msprop:Generator_UserColumnName="nameMaterial" msprop:Generator_ColumnVarNameInTable="columnnameMaterial" type="xs:string" minOccurs="0" />
+              <xs:element name="symbolUnit" msprop:Generator_ColumnPropNameInTable="symbolUnitColumn" msprop:Generator_ColumnPropNameInRow="symbolUnit" msprop:Generator_UserColumnName="symbolUnit" msprop:Generator_ColumnVarNameInTable="columnsymbolUnit" type="xs:string" minOccurs="0" />
+              <xs:element name="quantityMaterial" msprop:Generator_ColumnPropNameInTable="quantityMaterialColumn" msprop:Generator_ColumnPropNameInRow="quantityMaterial" msprop:Generator_UserColumnName="quantityMaterial" msprop:Generator_ColumnVarNameInTable="columnquantityMaterial" type="xs:double" minOccurs="0" />
+              <xs:element name="defalultWasteMaterial" msprop:Generator_ColumnPropNameInTable="defalultWasteMaterialColumn" msprop:Generator_ColumnPropNameInRow="defalultWasteMaterial" msprop:Generator_UserColumnName="defalultWasteMaterial" msprop:Generator_ColumnVarNameInTable="columndefalultWasteMaterial" type="xs:double" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportPartidaEquitpment" msprop:Generator_RowEvHandlerName="ReportPartidaEquitpmentRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportPartidaEquitpmentRowDeleted" msprop:Generator_RowDeletingName="ReportPartidaEquitpmentRowDeleting" msprop:Generator_RowEvArgName="ReportPartidaEquitpmentRowChangeEvent" msprop:Generator_TablePropName="ReportPartidaEquitpment" msprop:Generator_RowChangedName="ReportPartidaEquitpmentRowChanged" msprop:Generator_UserTableName="ReportPartidaEquitpment" msprop:Generator_RowChangingName="ReportPartidaEquitpmentRowChanging" msprop:Generator_RowClassName="ReportPartidaEquitpmentRow" msprop:Generator_TableClassName="ReportPartidaEquitpmentDataTable" msprop:Generator_TableVarName="tableReportPartidaEquitpment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="refEquipment" msprop:Generator_ColumnPropNameInTable="refEquipmentColumn" msprop:Generator_ColumnPropNameInRow="refEquipment" msprop:Generator_UserColumnName="refEquipment" msprop:Generator_ColumnVarNameInTable="columnrefEquipment" type="xs:string" minOccurs="0" />
+              <xs:element name="nameEquipment" msprop:Generator_ColumnPropNameInTable="nameEquipmentColumn" msprop:Generator_ColumnPropNameInRow="nameEquipment" msprop:Generator_UserColumnName="nameEquipment" msprop:Generator_ColumnVarNameInTable="columnnameEquipment" type="xs:string" minOccurs="0" />
+              <xs:element name="symbolUnit" msprop:Generator_ColumnPropNameInTable="symbolUnitColumn" msprop:Generator_ColumnPropNameInRow="symbolUnit" msprop:Generator_UserColumnName="symbolUnit" msprop:Generator_ColumnVarNameInTable="columnsymbolUnit" type="xs:string" minOccurs="0" />
+              <xs:element name="quantityEquipment" msprop:Generator_ColumnPropNameInTable="quantityEquipmentColumn" msprop:Generator_ColumnPropNameInRow="quantityEquipment" msprop:Generator_UserColumnName="quantityEquipment" msprop:Generator_ColumnVarNameInTable="columnquantityEquipment" type="xs:double" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" type="xs:double" minOccurs="0" />
+              <xs:element name="CostPyO" msprop:Generator_ColumnPropNameInRow="CostPyO" msprop:Generator_ColumnPropNameInTable="CostPyOColumn" msprop:Generator_ColumnVarNameInTable="columnCostPyO" msprop:Generator_UserColumnName="CostPyO" type="xs:double" minOccurs="0" />
+              <xs:element name="EqmtNewPrice" msprop:Generator_ColumnPropNameInRow="EqmtNewPrice" msprop:Generator_ColumnPropNameInTable="EqmtNewPriceColumn" msprop:Generator_ColumnVarNameInTable="columnEqmtNewPrice" msprop:Generator_UserColumnName="EqmtNewPrice" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportPartidaLabour" msprop:Generator_RowEvHandlerName="ReportPartidaLabourRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportPartidaLabourRowDeleted" msprop:Generator_RowDeletingName="ReportPartidaLabourRowDeleting" msprop:Generator_RowEvArgName="ReportPartidaLabourRowChangeEvent" msprop:Generator_TablePropName="ReportPartidaLabour" msprop:Generator_RowChangedName="ReportPartidaLabourRowChanged" msprop:Generator_UserTableName="ReportPartidaLabour" msprop:Generator_RowChangingName="ReportPartidaLabourRowChanging" msprop:Generator_RowClassName="ReportPartidaLabourRow" msprop:Generator_TableClassName="ReportPartidaLabourDataTable" msprop:Generator_TableVarName="tableReportPartidaLabour">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="reflabour" msprop:Generator_ColumnPropNameInTable="reflabourColumn" msprop:Generator_ColumnPropNameInRow="reflabour" msprop:Generator_UserColumnName="reflabour" msprop:Generator_ColumnVarNameInTable="columnreflabour" type="xs:string" minOccurs="0" />
+              <xs:element name="namelabour" msprop:Generator_ColumnPropNameInTable="namelabourColumn" msprop:Generator_ColumnPropNameInRow="namelabour" msprop:Generator_UserColumnName="namelabour" msprop:Generator_ColumnVarNameInTable="columnnamelabour" type="xs:string" minOccurs="0" />
+              <xs:element name="symbolUnit" msprop:Generator_ColumnPropNameInTable="symbolUnitColumn" msprop:Generator_ColumnPropNameInRow="symbolUnit" msprop:Generator_UserColumnName="symbolUnit" msprop:Generator_ColumnVarNameInTable="columnsymbolUnit" type="xs:string" minOccurs="0" />
+              <xs:element name="quantitylabour" msprop:Generator_ColumnPropNameInTable="quantitylabourColumn" msprop:Generator_ColumnPropNameInRow="quantitylabour" msprop:Generator_UserColumnName="quantitylabour" msprop:Generator_ColumnVarNameInTable="columnquantitylabour" type="xs:double" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PartidaTotalMateriales" msprop:Generator_RowEvHandlerName="PartidaTotalMaterialesRowChangeEventHandler" msprop:Generator_RowDeletedName="PartidaTotalMaterialesRowDeleted" msprop:Generator_RowDeletingName="PartidaTotalMaterialesRowDeleting" msprop:Generator_RowEvArgName="PartidaTotalMaterialesRowChangeEvent" msprop:Generator_TablePropName="PartidaTotalMateriales" msprop:Generator_RowChangedName="PartidaTotalMaterialesRowChanged" msprop:Generator_UserTableName="PartidaTotalMateriales" msprop:Generator_RowChangingName="PartidaTotalMaterialesRowChanging" msprop:Generator_RowClassName="PartidaTotalMaterialesRow" msprop:Generator_TableClassName="PartidaTotalMaterialesDataTable" msprop:Generator_TableVarName="tablePartidaTotalMateriales">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PartidaTotalEquipment" msprop:Generator_RowEvHandlerName="PartidaTotalEquipmentRowChangeEventHandler" msprop:Generator_RowDeletedName="PartidaTotalEquipmentRowDeleted" msprop:Generator_RowDeletingName="PartidaTotalEquipmentRowDeleting" msprop:Generator_RowEvArgName="PartidaTotalEquipmentRowChangeEvent" msprop:Generator_TablePropName="PartidaTotalEquipment" msprop:Generator_RowChangedName="PartidaTotalEquipmentRowChanged" msprop:Generator_UserTableName="PartidaTotalEquipment" msprop:Generator_RowChangingName="PartidaTotalEquipmentRowChanging" msprop:Generator_RowClassName="PartidaTotalEquipmentRow" msprop:Generator_TableClassName="PartidaTotalEquipmentDataTable" msprop:Generator_TableVarName="tablePartidaTotalEquipment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" type="xs:double" minOccurs="0" />
+              <xs:element name="unitaryEquipment" msprop:Generator_ColumnPropNameInTable="unitaryEquipmentColumn" msprop:Generator_ColumnPropNameInRow="unitaryEquipment" msprop:Generator_UserColumnName="unitaryEquipment" msprop:Generator_ColumnVarNameInTable="columnunitaryEquipment" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PartidaTotalLabour" msprop:Generator_RowEvHandlerName="PartidaTotalLabourRowChangeEventHandler" msprop:Generator_RowDeletedName="PartidaTotalLabourRowDeleted" msprop:Generator_RowDeletingName="PartidaTotalLabourRowDeleting" msprop:Generator_RowEvArgName="PartidaTotalLabourRowChangeEvent" msprop:Generator_TablePropName="PartidaTotalLabour" msprop:Generator_RowChangedName="PartidaTotalLabourRowChanged" msprop:Generator_UserTableName="PartidaTotalLabour" msprop:Generator_RowChangingName="PartidaTotalLabourRowChanging" msprop:Generator_RowClassName="PartidaTotalLabourRow" msprop:Generator_TableClassName="PartidaTotalLabourDataTable" msprop:Generator_TableVarName="tablePartidaTotalLabour">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportDataPartida" msprop:Generator_RowEvHandlerName="ReportDataPartidaRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportDataPartidaRowDeleted" msprop:Generator_RowDeletingName="ReportDataPartidaRowDeleting" msprop:Generator_RowEvArgName="ReportDataPartidaRowChangeEvent" msprop:Generator_TablePropName="ReportDataPartida" msprop:Generator_RowChangedName="ReportDataPartidaRowChanged" msprop:Generator_UserTableName="ReportDataPartida" msprop:Generator_RowChangingName="ReportDataPartidaRowChanging" msprop:Generator_RowClassName="ReportDataPartidaRow" msprop:Generator_TableClassName="ReportDataPartidaDataTable" msprop:Generator_TableVarName="tableReportDataPartida">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nameChapter" msprop:Generator_ColumnPropNameInTable="nameChapterColumn" msprop:Generator_ColumnPropNameInRow="nameChapter" msprop:Generator_UserColumnName="nameChapter" msprop:Generator_ColumnVarNameInTable="columnnameChapter" type="xs:string" minOccurs="0" />
+              <xs:element name="refPartida" msprop:Generator_ColumnPropNameInTable="refPartidaColumn" msprop:Generator_ColumnPropNameInRow="refPartida" msprop:Generator_UserColumnName="refPartida" msprop:Generator_ColumnVarNameInTable="columnrefPartida" type="xs:string" minOccurs="0" />
+              <xs:element name="namePartida" msprop:Generator_ColumnPropNameInTable="namePartidaColumn" msprop:Generator_ColumnPropNameInRow="namePartida" msprop:Generator_UserColumnName="namePartida" msprop:Generator_ColumnVarNameInTable="columnnamePartida" type="xs:string" minOccurs="0" />
+              <xs:element name="rendimiento" msprop:Generator_ColumnPropNameInTable="rendimientoColumn" msprop:Generator_ColumnPropNameInRow="rendimiento" msprop:Generator_UserColumnName="rendimiento" msprop:Generator_ColumnVarNameInTable="columnrendimiento" type="xs:double" minOccurs="0" />
+              <xs:element name="symbolUnitPart" msprop:Generator_ColumnPropNameInTable="symbolUnitPartColumn" msprop:Generator_ColumnPropNameInRow="symbolUnitPart" msprop:Generator_UserColumnName="symbolUnitPart" msprop:Generator_ColumnVarNameInTable="columnsymbolUnitPart" type="xs:string" minOccurs="0" />
+              <xs:element name="symbolUnitRend" msprop:Generator_ColumnPropNameInTable="symbolUnitRendColumn" msprop:Generator_ColumnPropNameInRow="symbolUnitRend" msprop:Generator_UserColumnName="symbolUnitRend" msprop:Generator_ColumnVarNameInTable="columnsymbolUnitRend" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PartidaCosts" msprop:Generator_RowEvHandlerName="PartidaCostsRowChangeEventHandler" msprop:Generator_RowDeletedName="PartidaCostsRowDeleted" msprop:Generator_RowDeletingName="PartidaCostsRowDeleting" msprop:Generator_RowEvArgName="PartidaCostsRowChangeEvent" msprop:Generator_TablePropName="PartidaCosts" msprop:Generator_RowChangedName="PartidaCostsRowChanged" msprop:Generator_UserTableName="PartidaCosts" msprop:Generator_RowChangingName="PartidaCostsRowChanging" msprop:Generator_RowClassName="PartidaCostsRow" msprop:Generator_TableClassName="PartidaCostsDataTable" msprop:Generator_TableVarName="tablePartidaCosts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="variableNameCostValue" msprop:Generator_ColumnPropNameInTable="variableNameCostValueColumn" msprop:Generator_ColumnPropNameInRow="variableNameCostValue" msprop:Generator_UserColumnName="variableNameCostValue" msprop:Generator_ColumnVarNameInTable="columnvariableNameCostValue" type="xs:string" minOccurs="0" />
+              <xs:element name="textFormatCostCalType" msprop:Generator_ColumnPropNameInTable="textFormatCostCalTypeColumn" msprop:Generator_ColumnPropNameInRow="textFormatCostCalType" msprop:Generator_UserColumnName="textFormatCostCalType" msprop:Generator_ColumnVarNameInTable="columntextFormatCostCalType" type="xs:string" minOccurs="0" />
+              <xs:element name="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_UserColumnName="Value" msprop:Generator_ColumnVarNameInTable="columnValue" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TMSymbolMoney" msprop:Generator_RowEvHandlerName="TMSymbolMoneyRowChangeEventHandler" msprop:Generator_RowDeletedName="TMSymbolMoneyRowDeleted" msprop:Generator_RowDeletingName="TMSymbolMoneyRowDeleting" msprop:Generator_RowEvArgName="TMSymbolMoneyRowChangeEvent" msprop:Generator_TablePropName="TMSymbolMoney" msprop:Generator_RowChangedName="TMSymbolMoneyRowChanged" msprop:Generator_UserTableName="TMSymbolMoney" msprop:Generator_RowChangingName="TMSymbolMoneyRowChanging" msprop:Generator_RowClassName="TMSymbolMoneyRow" msprop:Generator_TableClassName="TMSymbolMoneyDataTable" msprop:Generator_TableVarName="tableTMSymbolMoney">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TMSymbolMoneyName" msprop:Generator_ColumnPropNameInTable="TMSymbolMoneyNameColumn" msprop:Generator_ColumnPropNameInRow="TMSymbolMoneyName" msprop:Generator_UserColumnName="TMSymbolMoneyName" msprop:Generator_ColumnVarNameInTable="columnTMSymbolMoneyName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PUMSymbolMoney" msprop:Generator_RowEvHandlerName="PUMSymbolMoneyRowChangeEventHandler" msprop:Generator_RowDeletedName="PUMSymbolMoneyRowDeleted" msprop:Generator_RowDeletingName="PUMSymbolMoneyRowDeleting" msprop:Generator_RowEvArgName="PUMSymbolMoneyRowChangeEvent" msprop:Generator_TablePropName="PUMSymbolMoney" msprop:Generator_RowChangedName="PUMSymbolMoneyRowChanged" msprop:Generator_UserTableName="PUMSymbolMoney" msprop:Generator_RowChangingName="PUMSymbolMoneyRowChanging" msprop:Generator_RowClassName="PUMSymbolMoneyRow" msprop:Generator_TableClassName="PUMSymbolMoneyDataTable" msprop:Generator_TableVarName="tablePUMSymbolMoney">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PUMSymbolMoneyName" msprop:Generator_ColumnPropNameInTable="PUMSymbolMoneyNameColumn" msprop:Generator_ColumnPropNameInRow="PUMSymbolMoneyName" msprop:Generator_UserColumnName="PUMSymbolMoneyName" msprop:Generator_ColumnVarNameInTable="columnPUMSymbolMoneyName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TESymbolMoney" msprop:Generator_RowEvHandlerName="TESymbolMoneyRowChangeEventHandler" msprop:Generator_RowDeletedName="TESymbolMoneyRowDeleted" msprop:Generator_RowDeletingName="TESymbolMoneyRowDeleting" msprop:Generator_RowEvArgName="TESymbolMoneyRowChangeEvent" msprop:Generator_TablePropName="TESymbolMoney" msprop:Generator_RowChangedName="TESymbolMoneyRowChanged" msprop:Generator_UserTableName="TESymbolMoney" msprop:Generator_RowChangingName="TESymbolMoneyRowChanging" msprop:Generator_RowClassName="TESymbolMoneyRow" msprop:Generator_TableClassName="TESymbolMoneyDataTable" msprop:Generator_TableVarName="tableTESymbolMoney">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TESymbolMoneyName" msprop:Generator_ColumnPropNameInTable="TESymbolMoneyNameColumn" msprop:Generator_ColumnPropNameInRow="TESymbolMoneyName" msprop:Generator_UserColumnName="TESymbolMoneyName" msprop:Generator_ColumnVarNameInTable="columnTESymbolMoneyName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PUESymbolMoney" msprop:Generator_RowEvHandlerName="PUESymbolMoneyRowChangeEventHandler" msprop:Generator_RowDeletedName="PUESymbolMoneyRowDeleted" msprop:Generator_RowDeletingName="PUESymbolMoneyRowDeleting" msprop:Generator_RowEvArgName="PUESymbolMoneyRowChangeEvent" msprop:Generator_TablePropName="PUESymbolMoney" msprop:Generator_RowChangedName="PUESymbolMoneyRowChanged" msprop:Generator_UserTableName="PUESymbolMoney" msprop:Generator_RowChangingName="PUESymbolMoneyRowChanging" msprop:Generator_RowClassName="PUESymbolMoneyRow" msprop:Generator_TableClassName="PUESymbolMoneyDataTable" msprop:Generator_TableVarName="tablePUESymbolMoney">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PUESymbolMoneyName" msprop:Generator_ColumnPropNameInTable="PUESymbolMoneyNameColumn" msprop:Generator_ColumnPropNameInRow="PUESymbolMoneyName" msprop:Generator_UserColumnName="PUESymbolMoneyName" msprop:Generator_ColumnVarNameInTable="columnPUESymbolMoneyName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportPartidaEquipment2" msprop:Generator_RowEvHandlerName="ReportPartidaEquipment2RowChangeEventHandler" msprop:Generator_RowDeletedName="ReportPartidaEquipment2RowDeleted" msprop:Generator_RowDeletingName="ReportPartidaEquipment2RowDeleting" msprop:Generator_RowEvArgName="ReportPartidaEquipment2RowChangeEvent" msprop:Generator_TablePropName="ReportPartidaEquipment2" msprop:Generator_RowChangedName="ReportPartidaEquipment2RowChanged" msprop:Generator_UserTableName="ReportPartidaEquipment2" msprop:Generator_RowChangingName="ReportPartidaEquipment2RowChanging" msprop:Generator_RowClassName="ReportPartidaEquipment2Row" msprop:Generator_TableClassName="ReportPartidaEquipment2DataTable" msprop:Generator_TableVarName="tableReportPartidaEquipment2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="refEquipment" msprop:Generator_ColumnPropNameInTable="refEquipmentColumn" msprop:Generator_ColumnPropNameInRow="refEquipment" msprop:Generator_UserColumnName="refEquipment" msprop:Generator_ColumnVarNameInTable="columnrefEquipment" type="xs:string" minOccurs="0" />
+              <xs:element name="NameEquipment" msprop:Generator_ColumnPropNameInTable="NameEquipmentColumn" msprop:Generator_ColumnPropNameInRow="NameEquipment" msprop:Generator_UserColumnName="NameEquipment" msprop:Generator_ColumnVarNameInTable="columnNameEquipment" type="xs:string" minOccurs="0" />
+              <xs:element name="symbolUnit" msprop:Generator_ColumnPropNameInTable="symbolUnitColumn" msprop:Generator_ColumnPropNameInRow="symbolUnit" msprop:Generator_UserColumnName="symbolUnit" msprop:Generator_ColumnVarNameInTable="columnsymbolUnit" type="xs:string" minOccurs="0" />
+              <xs:element name="quantityEquipment" msprop:Generator_ColumnPropNameInTable="quantityEquipmentColumn" msprop:Generator_ColumnPropNameInRow="quantityEquipment" msprop:Generator_UserColumnName="quantityEquipment" msprop:Generator_ColumnVarNameInTable="columnquantityEquipment" type="xs:double" minOccurs="0" />
+              <xs:element name="COP" msprop:Generator_ColumnPropNameInTable="COPColumn" msprop:Generator_ColumnPropNameInRow="COP" msprop:Generator_UserColumnName="COP" msprop:Generator_ColumnVarNameInTable="columnCOP" type="xs:double" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
